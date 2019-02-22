@@ -12,6 +12,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         public EditText editText;
         public MyViewHolder(EditText editText) {
             super(editText);
+
+            // Long press work if we uncomment the following to prevent being recycled.
+            //setIsRecyclable(false);
+            
             this.editText = editText;
         }
     }
